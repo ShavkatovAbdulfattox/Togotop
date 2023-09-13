@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import { FontStyles } from "./components/FontStyles/FontStyles";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Root from "./routes/Root";
+import GlobalStyles from "./components/GlobalStyles";
 
 const router = createBrowserRouter([
   {
@@ -13,8 +14,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router}>
-      <FontStyles />
-    </RouterProvider>
+    <GlobalStyles />
+    <FontStyles />
+    <RouterProvider router={router}></RouterProvider>
   </React.StrictMode>
 );

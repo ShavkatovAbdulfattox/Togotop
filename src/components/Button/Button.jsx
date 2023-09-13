@@ -1,7 +1,19 @@
-import React from 'react';
+import { styled } from "styled-components";
+import { THEME } from "../../Constants";
 
-function Button() {
-  return <div></div>;
-}
-
+const Button = styled.button`
+  min-height: ${({ mHeight }) =>
+    mHeight ? mHeight : " var(--min-tap-target-height)"};
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  border: 2px solid
+    ${({ borderColor }) => (borderColor ? borderColor : THEME.COLORS.secondary)};
+  border-radius: ${100 / 16}rem;
+  font-size: ${({ size }) => (size ? size : "14px")};
+  font-family: ${({ fFamily }) => (fFamily ? fFamily : "Manrope")};
+  color: white;
+  line-height: 1.5;
+  padding: 0 ${({ pX }) => (pX ? pX + "px" : "43px")};
+`;
 export default Button;

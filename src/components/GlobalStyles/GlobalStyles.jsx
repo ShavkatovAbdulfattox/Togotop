@@ -76,9 +76,15 @@ ul > li {
 }
 
 html, body, #root {
-  height: 100%;  
+height: 100%;  
 scroll-behavior: smooth;
-background-color: rgb(229, 231, 235);
+background-color:hsla(0, 0%, 0%, 1);
+}
+html{
+  --min-tap-target-height: 40px;
+  @media (pointer: coarse) {
+      --min-tap-target-height: 48px;
+    }
 }
 
 `;
