@@ -11,5 +11,6 @@ export const THEME = {
     title: `${50 / 16}rem`,
     text: `${25 / 16}rem`,
     textMd: `${20 / 16}rem`,
+    textSmall: ` ${13 / 16}rem`,
   },
 };

@@ -78,13 +78,26 @@ ul > li {
 html, body, #root {
 height: 100%;  
 scroll-behavior: smooth;
-background-color:hsla(0, 0%, 0%, 1);
+background-color:hsla(0, 0%, 3%, 1);
 }
 html{
   --min-tap-target-height: 40px;
   @media (pointer: coarse) {
       --min-tap-target-height: 48px;
     }
+}
+
+.flex{
+  display: flex;
+}
+.items-center{
+  align-items: center;
+}
+.justify-center{
+  justify-items: center;
+}
+.flex-col{
+  flex-direction: column;
 }
 
 `;
