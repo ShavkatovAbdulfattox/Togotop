@@ -10,6 +10,7 @@ import { THEME } from "../../Constants";
 import snikers from "../../assets/images/svg/snikers.svg";
 import star from "../../assets/images/svg/star.svg";
 import line from "../../assets/images/svg/line.svg";
+import HeaderFooter from "../HeaderFooter";
 function Header() {
   return (
     <Wrapper>
@@ -48,6 +49,7 @@ function Header() {
             </Card>
           </Right>
         </HeaderContent>
+        <HeaderFooter />
       </Container>
     </Wrapper>
   );
@@ -66,7 +68,6 @@ const BackgroundImage = styled.img`
 `;
 
 const HeaderContent = styled.div`
-  margin-top: ${35 / 16}rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
