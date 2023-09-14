@@ -35,7 +35,6 @@ const Content = styled.div`
   border-radius: 20px;
   background: #191919;
   color: ${THEME.COLORS.white};
-  /* position: relative; */
   padding: 104px 156px 104px 0;
 
   & div {
