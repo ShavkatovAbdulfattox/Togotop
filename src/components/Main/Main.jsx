@@ -1,7 +1,18 @@
 import React from "react";
+import { styled } from "styled-components";
+import Service from "../Service/Service";
+import Container from "../Container/Container";
 
 function Main() {
-  return <div></div>;
+  return (
+    <Wrapper>
+      <Container>
+        <Service />
+      </Container>
+    </Wrapper>
+  );
 }
+
+const Wrapper = styled.main``;
 
 export default Main;

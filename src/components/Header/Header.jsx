@@ -15,7 +15,7 @@ function Header() {
   return (
     <Wrapper>
       {" "}
-      <BackgroundImage src={headerBg} />
+      <BackgroundImage src={headerBg} alt="background" />
       <Container>
         <Navbar />
         <HeaderContent>
@@ -37,7 +37,7 @@ function Header() {
             <Card>
               <Image src={snikers} alt="snikers" />
               <div>
-                <h3>Спортивные кросовки</h3>
+                <p>Спортивные кросовки</p>
                 <div>
                   <p>
                     {" "}
@@ -117,7 +117,7 @@ const Card = styled.div`
   max-width: 371px;
   display: flex;
   flex-direction: column;
-  & h3 {
+  & p {
     color: ${THEME.COLORS.white};
     font-family: "Inter";
     font-size: ${THEME.SIZES.textMd};

@@ -13,5 +13,6 @@ export const THEME = {
     textMd: `${20 / 16}rem`,
     textSmall: ` ${13 / 16}rem`,
     spaceXL: ` ${94 / 16}rem`,
+    spaceY: `${80 / 16}rem`,
   },
 };
