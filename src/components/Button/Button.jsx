@@ -4,7 +4,7 @@ import { THEME } from "../../Constants";
 const Button = styled.button`
   min-height: ${({ $mHeight }) =>
     $mHeight ? $mHeight : " var(--min-tap-target-height)"};
-  background-color: transparent;
+  background-color: ${({ $bg }) => ($bg ? $bg : "transparent")};
   outline: none;
   cursor: pointer;
   border: 2px solid
@@ -15,8 +15,8 @@ const Button = styled.button`
   font-family: ${({ $fFamily }) => ($fFamily ? $fFamily : "Manrope")};
   color: white;
   line-height: 1.5;
-  padding: 0 ${({ $pX }) => ($pX ? $pX + "px" : "43px")};
-  width: ${({ $width }) => ($width ? $width + "px" : "233px")};
+  padding: ${({ $pY }) => ($pY ? $pY + "px" : "0")} ${({ $pX }) => ($pX ? $pX + "px" : "43px")};
+  min-width: ${({ $width }) => ($width ? $width + "px" : "233px")};
   max-width: 100%;
   &:active {
     transform: scale(0.98);
