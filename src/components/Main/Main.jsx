@@ -5,6 +5,7 @@ import Container from "../Container/Container";
 import Problems from "../Problems";
 import Partner from "../Partner";
 import Easy from "../Easy";
+import Fit from "../Fit";
 
 function Main() {
   return (
@@ -14,6 +15,7 @@ function Main() {
         <Problems />
         <Easy />
         <Partner />
+        <Fit />
       </Container>
     </Wrapper>
   );

@@ -105,5 +105,4 @@ const Content = styled.div`
     padding: 57px 43px;
   }
 `;
-
 export default Easy;
